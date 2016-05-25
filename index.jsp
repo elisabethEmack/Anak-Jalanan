@@ -10,7 +10,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Login SIA Mahasiswa</title>
-        <link type="text/css" rel="stylesheet" href="login.css">
+        <link type="text/css" rel="stylesheet" href="design.css">
     </head>
     <body>
         <div class="body"></div>
@@ -28,5 +28,12 @@
                     <br><span class="miring">Lupa Password</span> 
                 </div></a>
         </div>        
+        
+        <div class="notMember">
+            <div>Not<span>A</span>Member</div>
+        </div>
+        <a class="button" href="lupaPasword.jsp"><div>Guest</div></a>
+        <br>
+        
     </body>
 </html>
