@@ -1,16 +1,10 @@
-<%-- 
-    Document   : lupaPasword
-    Created on : May 24, 2016, 11:46:32 PM
-    Author     : emack
---%>
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Lupa Password</title>
-        <link type="text/css" rel="stylesheet" href="login.css">
+        <link type="text/css" rel="stylesheet" href="design.css">
     </head>
     <body>
         <div class="body"></div>
