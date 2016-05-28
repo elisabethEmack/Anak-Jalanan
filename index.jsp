@@ -21,18 +21,20 @@
         <br>
 
         <div class="login">
+            <form action="checkerror.jsp" method="POST">
             <input type="text" placeholder="username" name="user"><br>
             <input type="password" placeholder="password" name="password"><br>           
-            <a class="button" href="lupaPasword.jsp">Login</a>
+            <input class="button" type="submit" value="Login">
             <a href="lupaPasword.jsp"><div id="link">
                     <br><span class="miring">Lupa Password</span> 
                 </div></a>
+            </form>
         </div>        
         
         <div class="notMember">
             <div>Not<span>A</span>Member</div>
         </div>
-        <a class="button" href="lupaPasword.jsp"><div>Guest</div></a>
+        <a class="button" href="GuestPage.jsp"><div>Guest</div></a>
         <br>
         
     </body>
