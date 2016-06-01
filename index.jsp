@@ -21,9 +21,10 @@
         <br>
 
         <div class="login">
-            <form action="checkerror.jsp" method="POST">
-            <input type="text" placeholder="username" name="user"><br>
-            <input type="password" placeholder="password" name="password"><br>           
+            <form action="LoginCheck" method="post">
+            <input type="text" placeholder="username" name="user" required="required"><br>
+            <input type="password" placeholder="password" name="password" required="required"><br>
+            <input type="hidden" name="page" value="login">
             <input class="button" type="submit" value="Login">
             <a href="lupaPasword.jsp"><div id="link">
                     <br><span class="miring">Lupa Password</span> 
