@@ -1,0 +1,49 @@
+--------------------------------------------------------
+--  File created - Wednesday-June-01-2016   
+--------------------------------------------------------
+--------------------------------------------------------
+--  DDL for Table MATAKULIAH
+--------------------------------------------------------
+
+  CREATE TABLE "HR"."MATAKULIAH" 
+   (	"KD_MK" VARCHAR2(10 BYTE), 
+	"NAMA_MK" VARCHAR2(40 BYTE), 
+	"JUMLAH_SKS" NUMBER
+   ) SEGMENT CREATION IMMEDIATE 
+  PCTFREE 10 PCTUSED 40 INITRANS 1 MAXTRANS 255 NOCOMPRESS LOGGING
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1 BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "USERS" ;
+REM INSERTING into HR.MATAKULIAH
+SET DEFINE OFF;
+Insert into HR.MATAKULIAH (KD_MK,NAMA_MK,JUMLAH_SKS) values ('COM 210','Analisis Algoritma',3);
+Insert into HR.MATAKULIAH (KD_MK,NAMA_MK,JUMLAH_SKS) values ('FST 243','Bahasa Indonesia',3);
+Insert into HR.MATAKULIAH (KD_MK,NAMA_MK,JUMLAH_SKS) values ('FST 342','Bahasa Inggris II',2);
+Insert into HR.MATAKULIAH (KD_MK,NAMA_MK,JUMLAH_SKS) values ('USD 325','Filsafat Ilmu Pengetahuan',2);
+Insert into HR.MATAKULIAH (KD_MK,NAMA_MK,JUMLAH_SKS) values ('INF 321','Pemrograman Berbasis Web',2);
+Insert into HR.MATAKULIAH (KD_MK,NAMA_MK,JUMLAH_SKS) values ('INF 251P','Praktikum Jaringan Komputer',1);
+Insert into HR.MATAKULIAH (KD_MK,NAMA_MK,JUMLAH_SKS) values ('222P','Praktikum Struktur Data II',1);
+Insert into HR.MATAKULIAH (KD_MK,NAMA_MK,JUMLAH_SKS) values ('270','Sistem Operasi',3);
+Insert into HR.MATAKULIAH (KD_MK,NAMA_MK,JUMLAH_SKS) values ('INF 240','Analisis Kebutuhan Perangkat Lunak',2);
+Insert into HR.MATAKULIAH (KD_MK,NAMA_MK,JUMLAH_SKS) values ('INF 321P','Praktikum Pemrograman Berbasis Web',1);
+--------------------------------------------------------
+--  DDL for Index MATAKULIAH_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "HR"."MATAKULIAH_PK" ON "HR"."MATAKULIAH" ("KD_MK") 
+  PCTFREE 10 INITRANS 2 MAXTRANS 255 COMPUTE STATISTICS 
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1 BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "USERS" ;
+--------------------------------------------------------
+--  Constraints for Table MATAKULIAH
+--------------------------------------------------------
+
+  ALTER TABLE "HR"."MATAKULIAH" ADD CONSTRAINT "MATAKULIAH_PK" PRIMARY KEY ("KD_MK")
+  USING INDEX PCTFREE 10 INITRANS 2 MAXTRANS 255 COMPUTE STATISTICS 
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1 BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "USERS"  ENABLE;
+  ALTER TABLE "HR"."MATAKULIAH" MODIFY ("JUMLAH_SKS" NOT NULL ENABLE);
+  ALTER TABLE "HR"."MATAKULIAH" MODIFY ("NAMA_MK" NOT NULL ENABLE);
+  ALTER TABLE "HR"."MATAKULIAH" MODIFY ("KD_MK" NOT NULL ENABLE);
