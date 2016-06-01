@@ -20,11 +20,12 @@
         </div>
         <br>        
         <div class="login">
-            <form action="checkerror.jsp" method="POST">
-            <input type="text" placeholder="username" name="user">
-            <input type="date" placeholder="tanggal lahir" name="bday"><br><br>
-            <input type="text" placeholder="tempat lahir" name="tmpLahir"><br>          
-            <input class="button" type="submit" value="Reset Password">            
+            <form action="LoginCheck" method="POST" >
+                <input type="text" placeholder="username" name="user" required="required"><br>
+                <input type="text" placeholder="dd/mm/yyyy" name="bday" required="required"><br>
+                <input type="text" placeholder="tempat lahir" name="tmpLahir" required="required"><br>
+                <input type="hidden" name="page" value="lupaPassword">
+                <input class="button" type="submit" value="Reset Password">            
             </form>
         </div>
     </body>
