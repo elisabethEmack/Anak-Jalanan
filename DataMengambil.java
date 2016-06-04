@@ -62,7 +62,8 @@ public class DataMengambil {
             throws ClassNotFoundException, SQLException {
 
         PreparedStatement stmt = null;
-        String sql = "UPDATE MENGAMBIL SET nim=?, kd_mk = ?";
+        String sql = "UPDATE MENGAMBIL SET nim=?, kd_mk = ?"
+                + "WHERE nim = ? ";
 
         try {
             connection = database.getConnection();
