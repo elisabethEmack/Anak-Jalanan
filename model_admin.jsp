@@ -10,16 +10,11 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Admin</title>
-        <link type="text/css" rel="stylesheet" href="design.css">
     </head>
     <body>
-        <div class="body"></div>
-        <div class="grad"></div>
-        <div class="login">
         <form name=login method="get" action=>
             <center>
-                
-                    <h1>Selamat Datang </h1><br>
+                    <h1>Menu Admin</h1><br>
                 <table border=1>
                     <tr>
                         <td>Nama Mahasiswa</td>
@@ -31,6 +26,11 @@
                         <td></td>
                     </tr>
                     <% //}%>
+                    <tr>
+                        <td>
+                            <a href='index.jsp'>back</a>
+                        </td>
+                    </tr>
                 </table>
             </center>
         </form>
