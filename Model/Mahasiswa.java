@@ -6,12 +6,14 @@
 
 package Model;
 
+import java.io.Serializable;
+
 /**
  *
  * @author emack
  */
-public class Mahasiswa {
-    private String nama,nim,alamat, ttl, jurusan, password;
+public class Mahasiswa implements Serializable{
+    private String nama,nim,alamat, tmpLahir,tglLahir, jurusan, password;
 
     public String getPassword() {
         return password;
@@ -45,14 +47,22 @@ public class Mahasiswa {
         this.alamat = alamat;
     }
 
-    public String getTtl() {
-        return ttl;
+    public String getTmpLahir() {
+        return tmpLahir;
     }
 
-    public void setTtl(String ttl) {
-        this.ttl = ttl;
+    public void setTmpLahir(String tmpLahir) {
+        this.tmpLahir = tmpLahir;
     }
 
+    public String getTglLahir() {
+        return tglLahir;
+    }
+
+    public void setTglLahir(String tglLahir) {
+        this.tglLahir = tglLahir;
+    }
+    
     public String getJurusan() {
         return jurusan;
     }
