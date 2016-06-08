@@ -5,11 +5,13 @@
  */
 package Model;
 
+import java.io.Serializable;
+
 /**
  *
  * @author emack
  */
-public class MataKuliah {
+public class MataKuliah implements Serializable{
 
     private String kd_Mk, nama_Mk;
     private int jumlah_SKS;
