@@ -11,7 +11,6 @@ package Model;
  */
 public class Admin {
     private String nim;
-    private String nama;
     private int totalSKS;
 
     public int getTotalSKS() {
@@ -28,13 +27,5 @@ public class Admin {
 
     public void setNim(String nim) {
         this.nim = nim;
-    }
-
-    public String getNama() {
-        return nama;
-    }
-
-    public void setNama(String nama) {
-        this.nama = nama;
     }
 }
