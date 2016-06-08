@@ -6,11 +6,13 @@
 
 package Model;
 
+import java.io.Serializable;
+
 /**
  *
  * @author emack
  */
-public class Dosen {
+public class Dosen implements Serializable{
     private String id, nama, alamat;
 
     public String getId() {
